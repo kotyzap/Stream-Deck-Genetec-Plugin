@@ -58,6 +58,10 @@ td:last-child{color:var(--fg2)}
 footer{padding:36px 0 48px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--fg2)}
 footer a{color:var(--fg2)}footer a:hover{color:var(--fg)}
 @media (max-width:820px){.decks{grid-template-columns:1fr}.hero{grid-template-columns:1fr;padding-top:24px}.hero h1{font-size:38px}.grid3,.flow{grid-template-columns:1fr}.navlinks span{display:none}}
+
+.cardlink{display:block;text-decoration:none;color:inherit;transition:border-color .15s}
+.cardlink:hover{border-color:var(--accent)}
+.cardlink h3{color:var(--fg)}
 """
 
 GH_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>'
@@ -123,6 +127,19 @@ BODY = f"""
       <div class="card"><div class="num">+</div><h3>Optional</h3><p>Rename the camera keys to your logical IDs; if your site customised shortcuts, type them into the affected keys. Mac: Stream Deck needs Accessibility permission once.</p></div>
     </div>
     <p class="meta" style="margin-top:24px">Limits: keystroke-based — Security Desk must be the front window, and the plugin cannot read state back (door status, alarm counts); that would need a Security Center SDK integration, a different class of project. Written to Genetec's documented defaults but not yet tested against a running Security Desk — reports welcome via <a href="{REPO}/issues">GitHub issues</a>.</p>
+  </section>
+
+
+  <section id="more">
+    <div class="eyebrow">More from 4xs.dev</div>
+    <h2>Other Stream Deck plugins.</h2>
+    <p class="lead">Physical keys for the tools you already use. All free and open source.</p>
+    <div class="grid3">
+      <a class="card cardlink" href="https://kotyzap.github.io/Stream-Deck-Claude-Plugin/"><h3>Deck for Claude ↗</h3><p>Answer permission prompts, replies, shortcuts & status for the Claude desktop app</p></a>
+      <a class="card cardlink" href="https://github.com/kotyzap/Stream-Deck-Axis-Cam-CamStreamer-Plugin"><h3>Camera Deck for Axis &amp; CamStreamer ↗</h3><p>PTZ, presets, overlays and CamStreamer/CamSwitcher control for Axis cameras</p></a>
+      <a class="card cardlink" href="https://kotyzap.github.io/Stream-Deck-ACS-Edge-Plugin/"><h3>Deck for AXIS Camera Station Edge ↗</h3><p>Recording playback, PTZ and view controls for ACS Edge</p></a>
+      <a class="card cardlink" href="https://kotyzap.github.io/Stream-Deck-ACS-Pro-Plugin/"><h3>Deck for AXIS Camera Station Pro &amp; 5 ↗</h3><p>Playback, cameras, PTZ presets and any hotkey for ACS 5 &amp; Pro</p></a>
+    </div>
   </section>
 
   <footer>
