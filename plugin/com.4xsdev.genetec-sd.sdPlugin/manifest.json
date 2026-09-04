@@ -1,0 +1,108 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "Name": "Deck for Genetec Security Desk",
+  "Version": "1.0.0.0",
+  "Author": "Pavel Kotyza",
+  "Description": "Genetec Security Desk's keyboard shortcuts on Stream Deck keys: play / pause, frame step, rewind / forward, bookmarks, instant replay, live / playback, alarm acknowledge and snooze, tile navigation and patterns, PTZ and presets, door unlock, hot actions — plus any entity by logical ID. Windows natively; on a Mac through Parallels, VMware or Remote Desktop. Ready-made profiles for Stream Deck, Mini and XL. Independent project, not affiliated with Genetec Inc. or Elgato. https://www.4xs.dev",
+  "UUID": "com.4xsdev.genetec-sd",
+  "Icon": "imgs/plugin/marketplace",
+  "Category": "Deck for Genetec Security Desk",
+  "CategoryIcon": "imgs/plugin/category",
+  "CodePath": "bin/plugin.js",
+  "SDKVersion": 3,
+  "Software": {
+    "MinimumVersion": "6.9"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20"
+  },
+  "Profiles": [
+    {
+      "Name": "Security Desk",
+      "DeviceType": 0,
+      "Readonly": false,
+      "AutoInstall": true
+    },
+    {
+      "Name": "Security Desk Mini",
+      "DeviceType": 1,
+      "Readonly": false,
+      "AutoInstall": true
+    },
+    {
+      "Name": "Security Desk XL",
+      "DeviceType": 2,
+      "Readonly": false,
+      "AutoInstall": true
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Security Desk Command",
+      "UUID": "com.4xsdev.genetec-sd.command",
+      "Icon": "imgs/actions/command/icon",
+      "Tooltip": "Sends one Genetec Security Desk shortcut to the front window: camera playback, alarms, tiles, PTZ, doors, hot actions, general. Defaults are Genetec's documented shortcuts; editable per key.",
+      "Controllers": [
+        "Keypad"
+      ],
+      "PropertyInspectorPath": "ui/command.html",
+      "SupportedInMultiActions": true,
+      "DisableAutomaticStates": true,
+      "States": [
+        {
+          "Image": "imgs/actions/command/key",
+          "TitleAlignment": "middle",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Security Desk Hotkey",
+      "UUID": "com.4xsdev.genetec-sd.hotkey",
+      "Icon": "imgs/actions/hotkey/icon",
+      "Tooltip": "Sends any shortcut or sequence with your own title — <logical ID> Enter displays a camera or entity in the selected tile, <n> Shift+Insert goes to a PTZ preset, <ID> Ctrl+Enter starts a camera sequence.",
+      "Controllers": [
+        "Keypad"
+      ],
+      "PropertyInspectorPath": "ui/hotkey.html",
+      "SupportedInMultiActions": true,
+      "DisableAutomaticStates": true,
+      "States": [
+        {
+          "Image": "imgs/actions/hotkey/key",
+          "TitleAlignment": "middle",
+          "ShowTitle": false
+        }
+      ]
+    },
+    {
+      "Name": "Activate Security Desk",
+      "UUID": "com.4xsdev.genetec-sd.activate",
+      "Icon": "imgs/actions/activate/icon",
+      "Tooltip": "Brings Security Desk to the front so the next shortcut lands in it — the client window on Windows; on a Mac the app hosting it (Parallels Desktop, VMware Fusion, Windows App).",
+      "Controllers": [
+        "Keypad"
+      ],
+      "PropertyInspectorPath": "ui/activate.html",
+      "SupportedInMultiActions": true,
+      "DisableAutomaticStates": true,
+      "States": [
+        {
+          "Image": "imgs/actions/activate/key",
+          "TitleAlignment": "middle",
+          "ShowTitle": false
+        }
+      ]
+    }
+  ]
+}

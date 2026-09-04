@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script></head>
+<body>
+<sdpi-item label="Title">
+  <sdpi-textfield setting="title" placeholder="Lobby"></sdpi-textfield>
+</sdpi-item>
+<sdpi-item label="Hotkey">
+  <sdpi-textfield setting="hotkey" placeholder="12 Enter"></sdpi-textfield>
+</sdpi-item>
+<sdpi-item label="Colour">
+  <sdpi-select setting="color" default="camera">
+    <option value="camera">Blue — camera / tile</option>
+    <option value="recording">Amber — video</option>
+    <option value="alarm">Red — alarm</option>
+    <option value="ptz">Green — PTZ</option>
+    <option value="door">Purple — door / hot action</option>
+    <option value="other">Grey — other</option>
+  </sdpi-select>
+</sdpi-item>
+<sdpi-item label="">
+  <small>Any shortcut or sequence, with your own title. Security Desk sequences: <b>&lt;logical ID&gt; Enter</b> displays that camera / entity in the selected tile, <b>&lt;ID&gt; Ctrl+Enter</b> starts a camera sequence, <b>&lt;n&gt; Shift+Insert</b> goes to PTZ preset n, <b>&lt;tile&gt; Backspace</b> clears a tile. Format: <b>Ctrl+Shift+F5</b>, parts separated by spaces.</small>
+</sdpi-item>
+</body></html>

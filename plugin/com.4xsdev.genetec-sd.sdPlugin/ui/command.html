@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<script src="https://sdpi-components.dev/releases/v4/sdpi-components.js"></script></head>
+<body>
+<sdpi-item label="Command">
+  <sdpi-select setting="command" default="play">
+    <optgroup label="Camera">
+      <option value="play">Play / pause — G</option>
+      <option value="prev-frame">Previous frame — N</option>
+      <option value="next-frame">Next frame — M</option>
+      <option value="rewind">Rewind — ,</option>
+      <option value="forward">Forward — .</option>
+      <option value="jump-back">Jump backward — Ctrl+Shift+N</option>
+      <option value="jump-fwd">Jump forward — Ctrl+Shift+M</option>
+      <option value="slow">Slow motion — Shift+Minus</option>
+      <option value="instant-replay">Instant replay — I</option>
+      <option value="live">Switch to live — L</option>
+      <option value="playback">Switch to playback — P</option>
+      <option value="bookmark">Add bookmark — B</option>
+      <option value="record">Toggle recording — R</option>
+      <option value="export">Export video — Ctrl+E</option>
+      <option value="tracking">Visual tracking — Alt+F</option>
+      <option value="stats">Stream statistics on tile — Ctrl+Shift+A</option>
+    </optgroup>
+    <optgroup label="Alarms">
+      <option value="ack">Acknowledge alarm — Space</option>
+      <option value="ack-all">Acknowledge all — Ctrl+Shift+Space</option>
+      <option value="snooze">Snooze alarm — S</option>
+      <option value="alarm-page">Show alarm page — Ctrl+A</option>
+      <option value="monitor-alarms">Monitor alarms in tile — Alt+A</option>
+    </optgroup>
+    <optgroup label="Tiles">
+      <option value="maximize">Maximize tile — E</option>
+      <option value="tile-full">Maximize tile full screen — Alt+Enter</option>
+      <option value="next-tile">Select next tile — Y</option>
+      <option value="prev-tile">Select previous tile — T</option>
+      <option value="next-pattern">Cycle next pattern — W</option>
+      <option value="prev-pattern">Cycle previous pattern — Q</option>
+      <option value="clear-all">Clear all tiles — Ctrl+Backspace</option>
+      <option value="back">Back — Alt+Left</option>
+      <option value="fwd">Forward — Alt+Right</option>
+      <option value="home">Home — Alt+Home</option>
+      <option value="cycle">Start cycling — Ctrl+Up</option>
+      <option value="cycle-next">Next content in cycle — Ctrl+Right</option>
+      <option value="cycle-prev">Previous content in cycle — Ctrl+Left</option>
+      <option value="refresh">Refresh — F5</option>
+    </optgroup>
+    <optgroup label="PTZ">
+      <option value="pan-left">Pan left — Left</option>
+      <option value="pan-right">Pan right — Right</option>
+      <option value="tilt-up">Tilt up — Up</option>
+      <option value="tilt-down">Tilt down — Down</option>
+      <option value="zoom-in">Zoom in — Plus</option>
+      <option value="zoom-out">Zoom out — Minus</option>
+      <option value="preset-1">Go to preset 1 — 1 Shift+Insert</option>
+      <option value="preset-2">Go to preset 2 — 2 Shift+Insert</option>
+      <option value="preset-3">Go to preset 3 — 3 Shift+Insert</option>
+      <option value="preset-4">Go to preset 4 — 4 Shift+Insert</option>
+    </optgroup>
+    <optgroup label="Doors">
+      <option value="unlock">Unlock door — U</option>
+      <option value="unlock-all">Unlock all doors — Ctrl+Shift+U</option>
+    </optgroup>
+    <optgroup label="Hot actions">
+      <option value="hot-1">Hot action 1 — Ctrl+F1</option>
+      <option value="hot-2">Hot action 2 — Ctrl+F2</option>
+      <option value="hot-3">Hot action 3 — Ctrl+F3</option>
+      <option value="hot-4">Hot action 4 — Ctrl+F4</option>
+      <option value="hot-5">Hot action 5 — Ctrl+F5</option>
+      <option value="hot-6">Hot action 6 — Ctrl+F6</option>
+      <option value="hot-7">Hot action 7 — Ctrl+F7</option>
+      <option value="hot-8">Hot action 8 — Ctrl+F8</option>
+      <option value="hot-9">Hot action 9 — Ctrl+F9</option>
+      <option value="hot-10">Hot action 10 — Ctrl+F10</option>
+    </optgroup>
+    <optgroup label="General">
+      <option value="fullscreen">Full screen — F11</option>
+      <option value="tiles-only">Tiles only — F10</option>
+      <option value="layout">Canvas / report / both — F9</option>
+      <option value="controls">Controls — F7</option>
+      <option value="selector">Selector — F6</option>
+      <option value="next-page">Next page — Ctrl+Tab</option>
+      <option value="prev-page">Previous page — Ctrl+Shift+Tab</option>
+      <option value="homepage">Home page — Ctrl+`</option>
+      <option value="saved-tasks">Saved tasks — Ctrl+N</option>
+      <option value="options">Options — Ctrl+O</option>
+      <option value="autolock">Auto lock — Ctrl+Shift+L</option>
+      <option value="help">Help — F1</option>
+    </optgroup>
+  </sdpi-select>
+</sdpi-item>
+<sdpi-item label="Hotkey">
+  <sdpi-textfield setting="hotkey" placeholder="leave empty for Genetec's default shown above"></sdpi-textfield>
+</sdpi-item>
+<sdpi-item label="">
+  <small>Defaults are Genetec's documented Security Desk shortcuts. If you customised them (Options → Keyboard shortcuts), type yours here. Format: <b>Ctrl+Shift+F5</b>; sequences with spaces, e.g. <b>3 Shift+Insert</b>. Keys: Ctrl / Alt / Shift, A–Z, 0–9, F1–F12, Space, Tab, Esc, Enter, Backspace, Insert, Home, arrows, Plus, Minus, Comma, Period, Grave. Shortcuts go to the front window — use the Activate key first.</small>
+</sdpi-item>
+</body></html>
