@@ -139,6 +139,7 @@ BODY = f"""
       <a class="card cardlink" href="https://kotyzap.github.io/Stream-Deck-Axis-Cam-CamStreamer-Plugin/"><h3>Camera Deck for Axis &amp; CamStreamer ↗</h3><p>PTZ, presets, overlays and CamStreamer/CamSwitcher control for Axis cameras</p></a>
       <a class="card cardlink" href="https://kotyzap.github.io/Stream-Deck-ACS-Edge-Plugin/"><h3>Deck for AXIS Camera Station Edge ↗</h3><p>Recording playback, PTZ and view controls for ACS Edge</p></a>
       <a class="card cardlink" href="https://kotyzap.github.io/Stream-Deck-ACS-Pro-Plugin/"><h3>Deck for AXIS Camera Station Pro &amp; 5 ↗</h3><p>Playback, cameras, PTZ presets and any hotkey for ACS 5 &amp; Pro</p></a>
+      <a class="card cardlink" href="https://kotyzap.github.io/Stream-Deck-Milestone-Plugin/"><h3>Deck for Milestone XProtect ↗</h3><p>Playback, evidence, PTZ, views and any camera or view by number for XProtect Smart Client</p></a>
     </div>
   </section>
 
